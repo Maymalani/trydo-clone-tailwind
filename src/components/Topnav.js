@@ -54,7 +54,7 @@ const Topnav = () => {
                                 show ? <i className="fa-solid fa-xmark fa-xl block xl:hidden" onClick={() => setShow(!show)}></i> : <i className="fa-solid fa-bars fa-xl block xl:hidden" onClick={() => setShow(!show)}></i>
                             }
                         </div>
-                        <div className={`${show ? "block" : "hidden"} xl:hidden overflow-y-auto rounded-md absolute top-[62px] left-0 w-full flex flex-col bg-white p-1`}>
+                        <div className={`${show ? "block" : "hidden"} xl:hidden text-black overflow-y-auto rounded-md absolute top-[62px] left-0 w-full flex flex-col bg-white p-1`}>
                             <NavLink to="/" onClick={() => setShow(false)} className="py-1 hover:text-[#f9004d] px-2 rounded-md">Home</NavLink>
                             <NavLink to="/#service" onClick={() => setShow(false)} className="py-1 hover:text-[#f9004d] px-2 my-1 rounded-md">Service</NavLink>
                             <NavLink to="/#about" onClick={() => setShow(false)} className="py-1 hover:text-[#f9004d] px-2 rounded-md">About</NavLink>
